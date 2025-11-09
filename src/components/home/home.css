@@ -1,0 +1,145 @@
+:host {
+  display: block;
+  background-color: #f8f9fa;
+  color: #1b1c1f;
+}
+
+.hero {
+  background: radial-gradient(circle at top left, #1f2a44, #0d111c 55%, #07070c);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 10% auto auto -10%;
+  width: 480px;
+  height: 480px;
+  background: rgba(13, 110, 253, 0.25);
+  filter: blur(140px);
+  z-index: 0;
+}
+
+.hero > .container {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-navbar {
+  background: rgba(9, 11, 22, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(18px);
+}
+
+.hero-device {
+  background: rgba(255, 255, 255, 0.04);
+  color: #fff;
+}
+
+.object-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.stats h3 {
+  font-size: 2rem;
+}
+
+.text-white-75 {
+  color: rgba(255, 255, 255, 0.75) !important;
+}
+
+.section-header {
+  max-width: 720px;
+  margin-inline: auto;
+}
+
+.section-pill {
+  display: inline-flex;
+  padding: 0.35rem 0.9rem;
+  border-radius: 999px;
+  background-color: rgba(13, 110, 253, 0.1);
+  color: #0d6efd;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.category-card {
+  border-top: 4px solid rgba(13, 110, 253, 0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 50px rgba(15, 23, 42, 0.12);
+}
+
+.accent-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #0d6efd, #6610f2);
+  display: inline-block;
+}
+
+.consult-card {
+  background: linear-gradient(135deg, #f8fbff, #eef2ff);
+}
+
+.check-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #198754;
+  box-shadow: 0 0 0 4px rgba(25, 135, 84, 0.15);
+  flex-shrink: 0;
+}
+
+.mini-card .display-6 {
+  font-size: 2.5rem;
+}
+
+.product-card img {
+  height: 220px;
+  object-fit: cover;
+}
+
+.product-filters .form-label {
+  letter-spacing: 0.08em;
+}
+
+.product-card--promo {
+  border: 2px solid rgba(25, 135, 84, 0.3);
+  box-shadow: 0 12px 40px rgba(25, 135, 84, 0.15);
+  background: linear-gradient(180deg, rgba(25, 135, 84, 0.06), #fff 40%);
+}
+
+.favorite-btn {
+  min-width: 110px;
+}
+
+.testimonial-card p {
+  font-size: 0.95rem;
+}
+
+.newsletter {
+  background: linear-gradient(135deg, #111827, #0d6efd);
+}
+
+@media (max-width: 991.98px) {
+  .hero {
+    text-align: center;
+  }
+
+  .hero-device {
+    margin-top: 1.5rem;
+  }
+
+  .stats {
+    justify-content: center;
+  }
+}
